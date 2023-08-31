@@ -1,0 +1,127 @@
+/*
+      各字体样式预览可以打开Windows控制面板\外观和个性化\字体
+*/
+
+/*
+        每次使用该库的字体前要在HTML文件头部加入link标签引入font.css文件
+*/
+@font-face {
+    font-family: 阿里妈妈刀立体;
+    src: url("./字体/阿里妈妈刀立体.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 阿里妈妈灵动体;
+    src: url("./字体/阿里妈妈灵动体.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 华文琥珀;
+    src: url("./字体/华文琥珀.TTF");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 华文行楷;
+    src: url("./字体/华文行楷.TTF");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 得意黑;
+    src: url("./字体/得意黑.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family:Pristina;
+    src: url("./字体/Pristina常规体.TTF");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family:Agency-FB紧缩粗体 ;
+    src: url("./字体/Agency\ FB紧缩粗体.TTF");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: impact;
+    src: url("./字体/impact常规体.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: IMTS;
+    src: url("./字体/Imprint\ MT\ Shadow常规体.TTF");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Ink-Free;
+    src: url("./字体/Ink\ Free常规体.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family:TCMT斜体 ;
+    src: url("./字体/Tw\ Cen\ MT斜体.TTF");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family:TCMT粗体 ;
+    src: url("./字体/Tw\ Cen\ MT粗体.TTF");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: TCMT粗斜体;
+    src: url("./字体/Tw\ Cen\ MT粗斜体.TTF");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family:Vla-Script;
+    src: url("./字体/Vladimir\ Script常规体.TTF");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family:钉钉进步体 ;
+    src: url("./字体/钉钉进步体.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 字魂扁桃体;
+    src: url("./字体/字魂扁桃体.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Rubik80sFade;
+    src: url("./字体/Rubik80sFade.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: RubikMaze;
+    src: url("./字体/RubikMaze.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 包圆小白体;
+    src: url("./字体/包图小白体.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 斗鱼追光体;
+    src: url("./字体/斗鱼追光体.otf");
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,243 @@
+/* 版心 */
+.wrapper{
+    margin: 0 auto;
+    width: 1240px;
+}
+
+/* 快捷导航 */
+.shortcut{
+    height: 52px;
+    background-color: #333;
+}
+.shortcut .wrapper{
+    display: flex;
+    justify-content: right;
+    height: 52px;
+}
+.shortcut ul{
+    display: flex;
+    line-height: 52px;
+}
+.shortcut li a{
+    padding: 0 15px;
+    border-right: 1px solid ;
+    cursor: pointer;
+    color: aliceblue;
+    font-family: 斗鱼追光体;
+}
+.shortcut li .iconfont{
+    padding: 0 3px 0 15px;
+    border: none;
+    font-size: 25px;
+    vertical-align: middle;
+}
+.shortcut li .no-border{
+    padding: 0 0;
+    font-family: 斗鱼追光体;
+    border: none;
+}
+.shortcut .login{
+    color: #5eb69c;
+}
+/* 头部区域 */
+.header{
+    margin-top: 22px;
+    margin-bottom: 22px;
+    height: 88px;
+    /* background-color: pink; */
+    display: flex;
+}
+/* logo */
+.header .logo{
+    margin-right: 40px;
+    width: 200px;
+    height: 88px;
+    /* background-color: skyblue; */
+}
+.logo a{
+    width: 200px;
+    height: 88px;
+    font-size: 0;
+    background-image: url(../images/logo.png);
+    display: block;
+}
+/* 导航 */
+.nav{
+    margin-top: 33px;
+    margin-right: 28px;
+
+}
+.nav ul{
+    display: flex;
+}
+.nav li{
+    margin-right: 47px;
+}
+.nav li a{
+    cursor: pointer;
+    padding-bottom: 10px;
+    font-family: 斗鱼追光体;
+}
+.nav li a:hover{
+    color:#5eb69c;
+    border-bottom:2px solid #5eb69c;
+}
+/* 搜索 */
+.search{
+    display: flex;
+    margin-top: 33px;
+    margin-right: 45px;
+    width: 170px;
+    height: 34px;
+    border-bottom: 2px solid #f4f4f4;
+}
+.search .iconfont{
+    font-size: 18px;
+    color: #ccc;
+    margin-right: 8px;
+}
+.search input{
+    /* 浏览器优先生效input的默认宽度，所以flex:1不生效
+    解决办法：重置input的默认宽度→width:0 */
+    flex: 1;
+    width: 0;
+}
+.search input::placeholder{
+    font-size: 16px;
+    color: #ccc;
+    font-family: 阿里妈妈刀立体;
+}
+/* 购物车 */
+.cart{
+    position: relative;
+    margin-top: 32px;
+}
+.cart .iconfont{
+    cursor: pointer;
+    font-size: 24px;
+}
+.cart .iconfont:hover{
+    color: #5eb69c;
+}
+.cart i{
+    position: absolute;
+    padding: 0 6px;
+    height: 15px;
+    font-size: 14px;
+    color: #fffefe;
+    line-height: 15px;
+    background-color: #e26237;
+    top: 1px;
+    left: 15px;
+    border-radius: 8px;
+}
+/* 底部 */
+.footer{
+    height: 580px;
+    background-color: #f5f5f5;
+
+}
+/* 服务 */
+.service{
+    padding: 60px 0;
+    height: 178px;
+    border-bottom: 1px solid #e8e8e8;
+    /* background-color: skyblue; */
+}
+.service ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+.service li{
+    display: flex;
+    width: 190px;
+    height: 58px;
+}
+.service li h5{
+    margin-right: 20px;
+    width: 58px;
+    height: 58px;
+    background-image: url(../images/sprite.png);
+}
+.service li:nth-child(2) h5{
+    background-position: 0 -58px;
+}
+.service li:nth-child(3) h5{
+    background-position: 0 -116px;
+}
+.service li:nth-child(4) h5{
+    background-position: 0 -174px;
+}
+.service li p{
+    font-size: 28px;
+    line-height: 58px;
+    font-family: 钉钉进步体;
+}
+/* 帮助中心 */
+.help{
+    display: flex;
+    height: 300px;
+    justify-content: space-between;
+    padding-top: 60px;
+    height: 300px;
+}
+.help .left{
+    display: flex;
+}
+.help .left dl{
+    margin-right: 84px;
+}
+.help .left dl:last-child{
+    margin-right: 0;
+}
+.help .left dt{
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-family:钉钉进步体 ;
+}
+.help .left dd{
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.help .left a{
+    font-size: 16px;
+    color:#969696;
+    font-family:钉钉进步体 ;
+}
+.help .left .iconfont{
+    color: #5eb69c;
+}
+.help .left .iconfont:hover{
+    color: #e26237;
+}
+.help .right ul{
+    display: flex;
+}
+.help .right li:first-child{
+    margin-right: 55px;
+}
+.help .right .pic{
+    margin-bottom: 10px;
+    width: 120px;
+    height: 120px;
+}
+.help .right p{
+    color: #969696;
+    text-align: center;
+    font-family:钉钉进步体 ;
+}
+/* 版权 */
+.copyright{
+    text-align: center;
+}
+.copyright p{
+    margin-bottom: 10px;
+    color: #a1a1a1;
+    font-family:钉钉进步体 ;
+}
+.copyright a{
+    cursor: pointer;
+    margin: 0 10px;
+    color: #a1a1a1;
+    font-family:钉钉进步体 ;
+}

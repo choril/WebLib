@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>播放按钮缩放</title>
+    <style>
+        .box{
+            margin: 0 auto;
+            width: 266.66px;
+            height: 230px;
+        }
+        .pic{
+            position: relative;
+            display: flex;
+            height: 150px;
+            overflow: hidden;
+        }
+        .txt p{
+            margin-top: 5px;
+            width: 300px;
+        }
+        .pic::after{
+            content: '';
+            width: 58px;
+            height: 58px;
+            left: 50%;
+            top: 50%;
+            margin-left: -29px;
+            margin-top: -29px;
+            position: absolute;
+            background-image: url(./images/play.png);
+            transform: scale(5);
+            opacity: 0;
+            transition: all 0.5s;
+        }
+        .box:hover .pic::after{
+            transform: scale(1);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="pic">
+            <img src="./images/party.jpeg" alt="">
+
+        </div>
+        <div class="txt">
+            <p>英雄联盟手游发布！快来预约内部账号</p>
+        </div>
+    </div>
+</body>
+</html>

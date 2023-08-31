@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻列表</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        .news{
+            margin: 100px auto;
+            width: 360px;
+            height: 200px;
+            /* background-color: pink; */
+        }
+        .head{
+            height: 34px;
+            background-color: #eee;
+            border: 1px solid #dbdee1;
+            border-left: 0;
+        }
+        .head a{
+            display: block;
+            width: 48px;
+            height: 34px;
+            background-color: #fff;
+            border-top: 3px solid #ff8400;
+            border-right: 1px solid #dbdee1;
+            color: #333;
+            text-align: center;
+            line-height: 32px;
+            margin-top: -1px;
+            font-size: 14px;
+        }
+        .body{
+            padding: 5px;
+
+
+        }
+        .body li{
+            background-image: url(./images/square.png);
+            background-repeat: no-repeat;
+            background-position: 0 8px;
+            padding-left: 15px;
+        }
+        .body li a{
+            background-image: url(./images/img.gif);
+            background-repeat: no-repeat;
+            background-position: 0 center;
+            padding-left: 20px;
+            font-size: 12px;
+            color: #666;
+            line-height: 24px;
+            overflow-x: hidden;
+        }
+        .body li a:hover{
+            color: #ff8400;
+        }
+    </style>
+</head>
+<body>
+    <div class="news">
+        <div class="head">
+            <a href="#">新闻</a>
+        </div>
+        <div class="body">
+            <ul>
+                <li><a href="">实探“私搭浮桥收费被判刑”风波中的洮儿河：河道宽水流急，便民桥已开建</a></li>
+                <li><a href="">“空姐和乘客一起被甩到舱顶”？国航回应航班突遇严重颠簸</a> </li>
+                <li><a href="">上周是有记录以来最热一周！今日入伏，5省局地可达40℃以上，12省份极易出现中暑天气 </a></li>
+                <li><a href="">中国摄影家协会回应“教授虚焦过曝照片入围摄影展”：慢慢理解吧，这是创作自由 </a></li>
+                <li><a href="">老人当街抛扔双胞胎女婴，警方通报：威胁他人人身安全，已被行拘</a> </li>
+                <li><a href="">转变态度？北约秘书长称土耳其总统同意支持瑞典入约</a> </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

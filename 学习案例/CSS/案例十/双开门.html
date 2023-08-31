@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>双开门效果</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .father{
+            display: flex;
+            margin: 0 auto;
+            width: 1366px;
+            height: 600px;
+            background-image: url(./bg.jpg);
+        }
+        .father .left,
+        .father .right{
+            width: 50%;
+            height: 600px;
+            background-image: url(./fm.jpg);
+            transition: all 5s;
+        }
+        .father .right{
+            background-position: right 0;
+            transform-origin: right top;
+        }
+        .father .left{
+            transform-origin: left top;
+        }
+        .father:hover .left{
+            transform: translate(-100%);
+            /* transform: rotate(-180deg); */
+        }
+        .father:hover .right{
+            /* transform: rotate(180deg); */
+            transform: translate(100%);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>

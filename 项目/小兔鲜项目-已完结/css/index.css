@@ -1,0 +1,369 @@
+/* 首页内容样式 */
+/* banner */
+.banner{
+    height: 500px;
+    background-color: #f5f5f5;
+}
+.banner .wrapper{
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    background-color: pink;
+}
+/* 图片 */
+.banner .pic{
+    display: flex;
+    width: 3720px;
+}
+/* 侧导航 */
+.subnav{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.42);
+}
+.subnav li{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    cursor: pointer;
+    padding-left: 30px;
+    padding-right: 12px;
+    height: 50px;
+    line-height: 50px;
+}
+.subnav li:hover{
+    background-color: #19FF9F;
+}
+.subnav li a{
+    margin-right: 5px;
+    font-size: 14px;
+    color: #fff;
+}
+.subnav li a:hover{
+    color: #FF0004;
+}
+.subnav span:hover{
+    color: #FF0004;
+}
+.subnav li a:first-child{
+    font-size: 16px;
+    margin-right: 14px;
+}
+.subnav li .iconfont{
+    font-size: 14px;
+}
+/* 圆点指示器 */
+.banner ol{
+    position: absolute;
+    bottom: 17px;
+    right: 16px;
+    display: flex;
+}
+.banner ol li{
+    margin-left: 8px;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.banner ol i{
+    display: block;
+    margin: 4px;
+    width: 14px;
+    height: 14px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+}
+.banner ol .current{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.banner ol .current i{
+    background-color: #fff;
+}
+/* 新鲜好物 */
+/* 标题 */
+.title{
+    display: flex;
+    justify-content: space-between;
+    height: 42px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.title .left{
+    display: flex;
+}
+.title .left h3{
+    margin-right: 35px;
+    font-size: 30px;
+}
+.title .left p{
+    align-self: flex-end;
+    color: #a1a1a1;
+}
+.title .right .more{
+    line-height: 42px;
+    color: #a1a1a1;
+}
+.title .right .iconfont{
+    margin-left: 10px;
+}
+/* 内容 */
+.bd ul{
+    justify-content: space-between;
+    display: flex;
+}
+.goods .bd li{
+    width: 304px;
+    height: 404px;
+    background-color: #eef9f4;
+}
+.bd li .pic{
+    width: 304px;
+    height: 304px;
+}
+.bd li .txt{
+    text-align: center;
+}
+.bd li h4{
+    font-size: 20px;
+    margin-top: 18px;
+    margin-bottom: 8px;
+}
+.goods .bd li p{
+    font-size: 18px;
+    color: #aa2113;
+}
+.goods .bd li span{
+    margin-left: 3px;
+    font-size: 22px;
+}
+.recommend .bd li p{
+    color: #a1a1a1
+}
+/* 热门品牌区域 */
+.brand{
+    margin-top: 60px;
+    height: 468px;
+    background-color: #f5f5f5;
+}
+.brand .wrapper{
+    overflow: hidden;
+    height: 468px;
+}
+.brand .title{
+    position: relative;
+    margin-bottom: 40px;
+}
+.brand .button{
+    display: flex;
+    position: absolute;
+    right: 0;
+    bottom: -25px;
+}
+.brand .button a{
+    width: 20px;
+    height: 20px;
+    margin-left: 12px;
+    text-align: center;
+    line-height: 20px;
+}
+.brand .button .prev{
+    background-color: #ddd;
+
+}
+.brand .button .next{
+    background-color: #00be9a;
+}
+.button .iconfont{
+    color: white;
+}
+.brand .bd li{
+    width: 244px;
+    height: 306px;
+}
+/* 生鲜区域 */
+/* 标题 */
+.fresh .title{
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+.title .right{
+    display: flex;
+}
+.title .right ul{
+    margin-top: 10px;
+    margin-right: 58px;
+    display: flex;
+}
+.title .right ul a{
+    padding: 0 7px;
+    height: 20px;
+    line-height: 20px;
+    display: block;
+    margin-left: 6px;
+}
+.title .right ul .current{
+    background-color: #00be9a;
+    color: #fff;
+}
+/* 内容 */
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+.content .left{
+    width: 248px;
+    height: 610px;
+}
+.content .right{
+    width: 968px;
+    height: 610px;
+}
+.content .right ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.content .right li{
+    overflow: hidden;
+    position: relative;
+    padding: 10px 21px 0;
+    width: 242px;
+    height: 305px;
+    border: 2px solid #fff;
+}
+/* 产品内容 */
+.content .pic{
+    width: 200px;
+    height: 180px;
+}
+.content .info{
+    margin-top: 14px;
+    margin-bottom: 5px;
+    height: 60px;
+    line-height: 19px;
+}
+.content .txt .price{
+    margin-top: 8px;
+    font-size: 22px;
+    color: #aa2113;
+}
+.content .txt .price span{
+    font-size: 22px;
+    margin-left: 5px;
+    color: #aa2113;
+}
+/* 产品底部绿色区域 */
+.content li .cover{
+    position: absolute;
+    padding-top: 15px;
+    left: 0;
+    bottom: -86px;
+    width: 242px;
+    height: 84px;
+    text-align:center;
+    background-color: #00be9a;
+    color: #fff;
+    transition: all 0.5s;
+}
+.content li .cover p:first-child{
+    font-size: 18px;
+}
+.content li .cover p:nth-child(2){
+    margin: 3px auto 6px;
+    width: 120px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.11);
+}
+.content li .cover p:nth-child(3){
+    font-size: 13px;
+}
+.content li .cover .iconfont{
+    font-size: 13px;
+}
+.content .right li:hover{
+    border: 2px solid #29edc6;
+}
+.content .right li:hover .cover{
+    bottom: 0;
+}
+/* 最新专题区域 */
+.topic{
+    margin-bottom: 40px;
+}
+.topic .title{
+    margin-top: 100px;
+}
+.topic .topic-bd ul{
+    display: flex;
+    justify-content: space-between;
+
+}
+.topic-bd li{
+    width: 405px;
+    height: 355px;
+}
+.topic-bd .pic{
+    position: relative;
+    width: 405px;
+    height: 288px;
+
+}
+.topic-bd .txt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    width: 405px;
+    height: 67px;
+    font-size: 14px;
+    color: #666;
+}
+.topic-bd .txt .left{
+    display: flex;
+}
+.topic-bd .txt .left p{
+    margin-right: 20px;
+}
+.topic-bd .txt .left p:nth-child(1) i{
+    color: #aa2113;
+}
+/* 定位区域 */
+.topic-bd .cover{
+    position: absolute;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    left: 0;
+    bottom: 0;
+    width: 405px;
+    height: 90px;
+    background-image: linear-gradient(180deg,rgba(137,137,137,0.00) 0%,rgba(0,0,0,0.90) 100%);
+}
+.topic-bd .cover .left{
+    color: #fff;
+}
+.topic-bd .cover .left h4{
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+.topic-bd .cover .right{
+    padding: 0 7px;
+    height: 25px;
+    color: #aa2113;
+    background-color: #fff;
+    font-size: 15px;
+}
+.topic-bd .cover .right span{
+    font-size: 18px;
+}
+
+
+
+
+
+
+
