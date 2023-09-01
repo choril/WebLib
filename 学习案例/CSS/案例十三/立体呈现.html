@@ -21,7 +21,8 @@
             width: 200px;
             height: 100%;
             position: relative;
-            transition: all .5s;
+            transition: all 1.5s;
+            transform: scaleZ(2);
             transform-style: preserve-3d;
             /* transform:rotateX(-20deg) rotateY(50deg); */
         }
@@ -29,6 +30,7 @@
             position: absolute;
             left: 0;
             top: 0;
+            font-size: 20px;
             display: block;
         }
         .title ul li a:first-child{
@@ -52,7 +54,10 @@
         }
         .title ul li:hover{
             transform-origin: bottom;
-            transform: rotateX(-90deg);
+            transform: rotateX(-90deg) scaleZ(1);
+        }
+        .title ul li:hover a{
+            font-size: 30px;
         }
     </style>
 </head>

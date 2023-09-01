@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* 大背景 */
+html{
+    height: 100%;
+}
+body{
+    position: relative;
+    height: 100%;
+    background: url(./images/f1_1.jpg) no-repeat center 0/cover;
+}
+
+/* 云 */
+.cloud img{
+    position: absolute;
+    left: 50%;
+    animation: cloud_move 2s infinite alternate;
+}
+.cloud img:nth-child(1){
+    margin-left: -250px;
+    margin-top: 20px;
+}
+.cloud img:nth-child(2){
+    margin-left: 290px;
+    margin-top: 60px;
+    animation: cloud_move 2.5s infinite alternate;
+}
+.cloud img:nth-child(3){
+    margin-top: 160px;
+    margin-left: -550px;
+}
+
+/* 热气球 */
+.ballon img{
+    position: absolute;
+    left: 390px;
+    top: 120px;
+    animation: ballon_move 1s infinite alternate;
+}
+/* 文字 */
+.txt img{
+    position: absolute;
+    left: 460px;
+    top: 215px;
+}
+.txt img:hover{
+    animation: txt_scale 1s;
+}
+/* 动画 */
+@keyframes cloud_move{
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(50px);
+    }
+}
+@keyframes ballon_move{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(20px);
+    }
+}
+@keyframes txt_scale{
+    0%{transform: scale(1);}
+    10%{transform: scale(0.5);}
+    80%{transform: scale(1.2);}
+    100%{transform: scale(1);}
+}
