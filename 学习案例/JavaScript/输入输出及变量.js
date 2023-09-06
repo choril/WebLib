@@ -1,0 +1,5 @@
+let name=prompt("请输入您的姓名："),age=prompt("请输入您的年龄："),gender=prompt("请输入您的性别："),hobby=prompt("请输入您的爱好：")
+document.write("<h1>欢迎您，<span style='color:red'>"+name+"</span></h1>")
+document.write("<h2>您的年龄是：<span style='color:red'>"+age+"</span></h2>")
+document.write("<h3>您的性别是：<span style='color:red'>"+gender+"</span></h3>")
+document.write("<h4>您的爱好是：<span style='color:red'>"+hobby+"</span></h4>")

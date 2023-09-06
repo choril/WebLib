@@ -1,0 +1,59 @@
+.zhuzhuang {
+  display: flex;
+  position: relative;
+  height: 500px;
+  width: 700px;
+  margin: 100px auto 0;
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.zhuzhuang span {
+  position: absolute;
+  bottom: 0;
+  flex-direction: column;
+  margin-top: 50px;
+  height: 500px;
+  width: 50px;
+  background-color: pink;
+}
+.zhuzhuang span p {
+  width: 100%;
+  margin-top: -40px;
+  text-align: center;
+  line-height: 50px;
+}
+.zhuzhuang .season1 {
+  margin-left: 100px;
+}
+.zhuzhuang .season2 {
+  margin-left: 250px;
+}
+.zhuzhuang .season3 {
+  margin-left: 400px;
+}
+.zhuzhuang .season4 {
+  margin-left: 550px;
+}
+.txt {
+  display: flex;
+  height: 50px;
+  width: 700px;
+  margin: 0 auto;
+}
+.txt p {
+  display: inline-block;
+  height: 100%;
+  width: 70px;
+}
+.txt p:nth-child(1) {
+  margin-left: 93px;
+}
+.txt p:nth-child(2) {
+  margin-left: 83px;
+}
+.txt p:nth-child(3) {
+  margin-left: 81px;
+}
+.txt p:nth-child(4) {
+  margin-left: 79px;
+}

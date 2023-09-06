@@ -1,0 +1,24 @@
+h1 {
+  font-size: 60px;
+  color: aqua;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: aqua;
+}
+table {
+  border-collapse: collapse;
+  color: aqua;
+  margin: 0 auto;
+  font-size: 35px;
+  background-image: url(04.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+table,
+th,
+td {
+  border: 5px solid red;
+  text-align: center;
+}
