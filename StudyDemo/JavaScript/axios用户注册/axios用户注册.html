@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../BootStrap框架/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            margin: 0 auto;
+            width: 500px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="input-group input-group-sm mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-sm">用户名</span>
+            <input type="text" class="form-control uname" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-sm">密码</span>
+            <input type="text" class="form-control password" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+        </div>
+        <button type="button" class="btn btn-dark">注册</button>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        // 注册用户的服务器地址：http://hmajax.itheima.net/api/register
+        const uname = document.querySelector('.uname')
+        const password =document.querySelector('.password')
+        const btn = document.querySelector('.btn')
+        btn.addEventListener('click',()=>{
+            axios({
+                url:'http://hmajax.itheima.net/api/register',
+                method:'post',
+                data:{username:uname.value,password:password.value}
+            }).then(res=>{
+                console.log(res)
+            })
+        })
+    </script>
+</body>
+</html>

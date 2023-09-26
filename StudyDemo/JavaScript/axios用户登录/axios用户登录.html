@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../BootStrap框架/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../BootStrap框架/BootStrapUITemplate/boomerang-free-bootstrap-ui-kit-master/assets/css/theme.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800|Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="../../../BootStrap框架/BootStrapUITemplate/boomerang-free-bootstrap-ui-kit-master/assets/vendor/animate/animate.min.css" type="text/css">
+    <link rel="stylesheet" href="../../../BootStrap框架/BootStrapUITemplate/boomerang-free-bootstrap-ui-kit-master/assets/vendor/fontawesome/css/fa-svg-with-js.css">
+    <link rel="stylesheet" href="">
+    <title>Document</title>
+    <style>
+        .form-group{
+            width: 200px;
+            margin: 5px 0 5px 640px;
+        }
+        p{
+            font-size: 30px;
+            font-family: 华文中宋;
+        }
+        #name{
+            margin: 50px 0 5px 640px;
+            font-family: 华文中宋;
+            font-size: 20px;
+        }
+        #logo{
+            margin: 100px 0 0 638px;
+            width: 200px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            /* border: 1px solid #000;
+            border-radius: 25px; */
+        }
+        #psw{
+            margin: 5px 0 5px 640px;
+            font-family: 华文中宋;
+            font-size: 20px;
+        }
+        .btn{
+            margin: 15px 0 5px 640px;
+            width: 200px;
+        }
+        body{
+            background-image: url(../../../BootStrap框架/BootStrapUITemplate/boomerang-free-bootstrap-ui-kit-master/assets/images/backgrounds/img-1.jpg);
+        }
+        .Ale{
+            margin: 20px 0 0 420px;
+            width: 700px;
+            height: 60px;
+            /* display: none; */
+        }
+    </style>
+</head>
+<body>
+    <div class="alert alert-dismissible Ale" role="alert">
+        <span class="alert-inner--icon"><i class="fas"></i></span>
+        <span class="alert-inner--text"></span>
+    </div>
+    <p id="logo">用户登录界面</p>
+    <p id="name">用户名</p>
+    <div class="form-group">
+        <input type="text" class="form-control is-valid uname" placeholder="Username">
+    </div>
+    <p id="psw">密码</p>
+    <div class="form-group">
+        <input type="password" class="form-control is-valid password" placeholder="Password">
+    </div>
+    <button type="button" class="btn btn-sm btn-outline-primary btn-icon">
+        <span class="btn-inner--text">Log on</span>
+        <span class="btn-inner--icon"><i class="fas fa-user"></i></span>
+    </button>
+    <button type="button" class="btn btn-secondary btn-icon">
+        <span class="btn-inner--icon"><i class="fas fa-arrow-left"></i></span>
+        <span class="btn-inner--text">Back Home</span>
+    </button>
+    <button type="button" class="btn btn-facebook btn-icon-label">
+        <span class="btn-inner--icon"><i class="fab fa-facebook"></i></span>
+        <span class="btn-inner--text">Facebook</span>
+    </button>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./axios用户登录.js"></script>
+    <script src="../../../BootStrap框架/BootStrapUITemplate/boomerang-free-bootstrap-ui-kit-master/assets/vendor/fontawesome/js/fa-solid.min.js"></script>
+    <script src="../../../BootStrap框架/BootStrapUITemplate/boomerang-free-bootstrap-ui-kit-master/assets/vendor/fontawesome/js/fontawesome.min.js"></script>
+    <script src="../../../BootStrap框架/BootStrapUITemplate/boomerang-free-bootstrap-ui-kit-master/assets/vendor/fontawesome/js/fa-brands.min.js"></script>
+</body>
+</html>

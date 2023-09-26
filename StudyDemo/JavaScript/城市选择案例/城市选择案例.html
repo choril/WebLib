@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../font-family字体族/font.css">
+    <link rel="stylesheet" href="../../../BootStrap框架/css/bootstrap.css">
+    <title>Document</title>
+    <style>
+        p{
+            height: 35px;
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        select{
+            margin-bottom: 5px;
+        }
+        .allCity{
+            text-align: center;
+            font-family: 钉钉进步体;
+            font-size: 20px;
+            height: 35px;
+            width: 900px;
+            border: 2px solid #979494;
+            border-radius: 18px;
+        }
+    </style>
+</head>
+<body>
+    <p id="province">省份</p>
+    <div class="input-group input-group-sm mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-sm">省份</span>
+        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+    </div>
+    <p id="city">地级市</p>
+    <div class="input-group input-group-sm mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-sm">地级市</span>
+        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+    </div>
+    <button type="button" class="btn btn-success">查询</button>
+    <p id="province">城市列表</p>
+    <div class="AllCity"></div>
+    <script src="./城市选择案例.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+</html>

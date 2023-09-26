@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="黑马程序员年度抽奖活动">
+    <meta name="keywords" content="itheima 黑马程序员年度抽奖活动 黑马 Python Web">
+    <title>年会抽奖</title>
+    <link rel="stylesheet" href="../../../font-family字体族/font.css">
+    <style>
+        .wrapper{
+            margin: 0 auto;
+            height: 500px;
+            width: 1000px;
+            /* background-color: #000; */
+            background-image: url(./115709-16923310295bac.jpg);
+        }
+        div{
+            font-family:钉钉进步体;
+            margin: 40px auto;
+            width: 600px;
+            height: 75px;
+            text-align: center;
+        }
+        #div1{
+            font-size: 50px;
+        }
+        #div2{
+            font-size: 35px;
+        }
+        #div3{
+            font-size: 20px;
+        }
+        h1{
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>年度抽奖活动</h1>
+        <div id="div1"></div>
+        <div id="div2"></div>
+        <div id="div3"></div>
+    </div>
+    <script>
+        const div1 = document.querySelector('#div1')
+        const div2 = document.querySelector('#div2')
+        const div3 = document.querySelector('#div3')
+        const h1=document.querySelector('h1')
+        const person = ['张三','李四','王五','赵六','田七','马八']
+        let random1 = Math.floor(Math.random()*6)
+        div1.innerHTML = `一等奖:${person[random1]}`
+        person.splice(random1,1)
+        let random2 = Math.floor(Math.random()*5)
+        div2.innerHTML = `二等奖:${person[random2]}`
+        person.splice(random2,1)
+        let random3 = Math.floor(Math.random()*4)
+        div3.innerHTML = `三等奖:${person[random3]}`
+        person.splice(random3,1)
+        let random4 = Math.floor(Math.random()*256)
+        let random5 = Math.floor(Math.random()*256)
+        let random6 = Math.floor(Math.random()*256)
+        console.log(random4,random5,random6);
+        div1.style.color = `rgb(${random4},${random5},${random6})`
+        div2.style.color = `rgb(${random4},${random5},${random6})`
+        div3.style.color = `rgb(${random4},${random5},${random6})`
+        h1.style.color = `rgb(${random4},${random5},${random6})`
+    </script>
+</body>
+</html>

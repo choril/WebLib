@@ -1,0 +1,65 @@
+/* 标签选择器 ，选择想要美化的部位（如body）*/
+body{
+	/* 背景颜色 */
+	background-color: #000000;
+	/* 背景图片 */
+	/* url（）是图片路径 */
+	background-image:url('../imgs/bg.jpg');
+	/* 背景图平铺效果 */
+	background-repeat:no-repeat;
+	/* 背景图尺寸 */
+	background-size: 100%;
+}
+/* 类选择器 */
+.container{
+	height: 2225px;
+	width:4300px;
+	/* 边框的大小，颜色，实虚线 */
+	border: 0px solid red ;
+	/* 外边框 ，上下间距，左右间距*/
+	 /* auto自动 */
+	 margin: 700px auto; 
+	  
+}
+.rows{ 
+	/* 弹性盒子，等距并调成能放入的盒子大小 */
+	display: flex;
+	/* 水平的对齐方式 */
+	justify-content: space-between;
+	/*垂直的对齐方式 */
+	align-items: center; 
+	
+}
+.team{
+	/* 透明度 */
+	opacity: 0.5;
+}
+.now{
+	opacity: 1;
+}
+.btn{
+	width:700px;
+	height:240px;
+	border: 0px solid red;
+	background-image: url('../imgs/btn_bg.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	/* 文字颜色 */
+	color: white;
+	/* 字体大小 */
+	font-size:100px ;
+	/* 加粗 */
+	font-weight:bold;
+	/*文本水平居中*/
+	text-align:center;
+	/* 垂直居中*/
+	line-height: 220px;
+	/*鼠标样式*/
+	cursor: pointer;
+    /* 不让用户选 */
+	user-select: none;
+    /*相对定位  */
+    position: relative;
+	left:1800px;
+	top:-1200px;
+}
